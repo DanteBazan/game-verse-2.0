@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: sans-serif;
+}
+
+body {
+  background: rgb(16, 16, 58);
+  color: rgb(238, 233, 233);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.3rem;
+  background: linear-gradient(to bottom, rgb(15, 15, 80), rgb(16, 16, 58));
+  position: fixed;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: rgb(235, 237, 230);
+}
+
+.navbar-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-link {
+  color: rgb(238, 233, 233);
+  font-weight: 600;
+}
+
+.navbar i {
+  font-size: 2rem;
+  display: none;
+}
+
+#toggle-menu {
+  display: none;
+}
+
+.navbar ul {
+  background: rgb(16, 16, 58);
+  width: 100%;
+  height: calc(100vh - 3rem);
+  position: absolute;
+  top: 2.9rem;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  display: none;
+}
+
+.navbar i {
+  display: block;
+}
+
+#toggle-menu:checked ~ .navbar-list {
+  display: flex;
+}
+
+/* main */
+
+.main {
+  padding-top: 5rem;
+}
+
+.hero {
+  max-width: 800px;
+  margin: auto;
+  /* border: 1px solid red; */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-description h2 {
+  color: rgb(241, 236, 244);
+}
+
+.hero-description p {
+  /* max-width: 400px; */
+  text-align: center;
+  color: rgb(208, 203, 203);
+}
+
+.hero-description button {
+  width: 30%;
+  border: 0;
+  padding: 0.2rem 0.3rem;
+  border-radius: 0.3rem;
+  color: rgb(242, 236, 236);
+  background: linear-gradient(to right, rgb(145, 55, 228), rgb(102, 6, 197));
+}
+
+.hero-description button:hover {
+  box-shadow: 0 0 5px white;
+}
+
+.container-iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid yellow; */
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 25vh;
+}
